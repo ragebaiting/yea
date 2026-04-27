@@ -1,41 +1,188 @@
-<html>
-  <head>
-  <meta charset="utf-8">
-  <title>sexi.st</title>
-<style>
-    pre {
-      font-family: monospace;
-      line-height: 0.75;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sexi.st — Your next link in bio platform</title>
+  <meta name="description"
+    content="sexi.st — Your next link in bio platform. Claim your username early before anyone else discovers what we're building.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .glow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: radial-gradient(ellipse 80% 100% at 50% -20%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .edge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.06) 30%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.06) 70%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      padding: 0 20px;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 24px;
+    }
+
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: brightness(0) saturate(100%) invert(40%) sepia(80%) saturate(3000%) hue-rotate(252deg) brightness(105%) contrast(97%);
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+    }
+
+    .sub {
+      font-size: 14px;
+      font-weight: 400;
+      color: #888888;
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+
+    .sub a {
+      color: #888888;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .sub a:hover {
+      color: #aaaaaa;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      line-height: 1;
+    }
+
+    .dark {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      border: 1px solid #2a2a2a;
+    }
+
+    .dark:hover {
+      background-color: #222222;
+      border-color: #333333;
+    }
+
+    .accent {
+      background-color: #a855f7;
+      color: #ffffff;
+    }
+
+    .accent:hover {
+      background-color: #9333ea;
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
     }
   </style>
 </head>
-<body>
-<pre>xanax barZZ to sleep i guess i had better days x_X<br>
-<br>  
-soundcloud:  <a href="https://soundcloud.com/ragebaiting" target="_blank" rel="noopener noreferrer">@ragebaiting</a><br>
-telegram:   <a href="https://t.me/distress" target="_blank" rel="noopener noreferrer">@distress</a><br>
-roblox:     <a href="https://www.roblox.com/users/8756713122/profile" target="_blank" rel="noopener noreferrer">@haahahaahaahahahahaa</a><br>
-<br><br><br>
------BEGIN PGP PUBLIC KEY BLOCK-----<br>
-<br>
-mDMEaPZbChYJKwYBBAHaRw8BAQdAsdMVn7zK8hbrFlkMrixuG+NRfjRNmZKI03Yg<br>
-XiJMGsK0FW1lb3cgPGNsdEB3YWlmdS5jbHViPoiZBBMWCgBBFiEEapXuJnH7VSuD<br>
-OOAwoi4ofNI1fgEFAmj2WwoCGwMFCQWkpyYFCwkIBwICIgIGFQoJCAsCBBYCAwEC<br>
-HgcCF4AACgkQoi4ofNI1fgFQBwD+JLOaGGAIPZGhfwHBfNhWBrW7PkwPJhw426/J<br>
-kxVD41wA/A75/aiSkUAFF+FShu2RWCFxKE5lYj765qY+uD+brnQMuDgEaPZbChIK<br>
-KwYBBAGXVQEFAQEHQBU+jecGI5ZyfKD0GXkLRv1Kr2Kv9hXWchliXg3idCQSAwEI<br>
-B4h+BBgWCgAmFiEEapXuJnH7VSuDOOAwoi4ofNI1fgEFAmj2WwoCGwwFCQWkpyYA<br>
-CgkQoi4ofNI1fgGqmwD9HD/QIPMueWPOw0X7BZCn9kqq5w806QLbuK31oPXLrzgA<br>
-/iT4Hv+HDDEJTemfc8QTwfObTx3dPYaJ2o82yNhP/W8J<br>
-=fgDv<br>
------END PGP PUBLIC KEY BLOCK-----
-<br><br><br>
-biolink very soon lol
-- sexi.st
-- breachi.ng
-- cucki.ng
-(etc etc.)
 
-</pre>
+<body>
+
+  <div class="glow"></div>
+  <div class="edge"></div>
+
+  <div class="wrap">
+    <div class="icon">
+      <img src="./images/branding/logo.png" alt="sexi.st logo">
+    </div>
+
+    <h1>Your online presence, simplified.</h1>
+
+    <p class="sub">Join our <a href="https://discord.gg/R3AFuWKDZ4" target="_blank" rel="noopener noreferrer">Discord
+        community</a> for early access and behind-the-scenes updates.</p>
+
+    <div class="actions">
+      <a href="https://discord.gg/R3AFuWKDZ4" target="_blank" rel="noopener noreferrer" class="btn dark" id="join">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.947 2.418-2.157 2.418z" />
+        </svg>
+        Join Community
+      </a>
+    </div>
+  </div>
+
 </body>
+
 </html>
